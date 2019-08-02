@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphActivity3">
+
+    <TextView
+        android:id="@+id/graph_tv_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/precinct_graph_view"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/barangay_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/barangay_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintBottom_toTopOf="@+id/precinct_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graph_tv_id" />
+
+    <Spinner
+        android:id="@+id/precinct_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintBottom_toTopOf="@+id/graph_spinner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barangay_spinner" />
+
+    <Spinner
+        android:id="@+id/graph_spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintBottom_toTopOf="@+id/generategraphbtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precinct_spinner" />
+
+    <Button
+        android:id="@+id/generategraphbtn3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/generate_graph"
+        android:drawableLeft="@drawable/generate"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="36dp"
+        android:paddingTop="10dp"
+        android:text="@string/generate_graph"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/generategraphbtn_m3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graph_spinner3" />
+
+
+    <Button
+        android:id="@+id/generategraphbtn_m3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/missing"
+        android:drawableLeft="@drawable/missinggraph"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="36dp"
+        android:paddingTop="10dp"
+        android:text="@string/generate_graph_with_missing_entry"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linechartpct_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generategraphbtn3" />
+    <!--android:drawableTint="#fc7a8c"-->
+
+    <Button
+        android:id="@+id/backgraphbtn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif"
+        android:text="@string/backbutton"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linechartpct_btn" />
+
+    <Button
+        android:id="@+id/linechartpct_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/line_graph"
+        android:drawableLeft="@drawable/linegraph"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="36dp"
+        android:paddingTop="10dp"
+        android:text="@string/generate_line_chart"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backgraphbtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generategraphbtn_m3" />
+    <!--android:drawableTint="#fcb550"-->
+
+</android.support.constraint.ConstraintLayout>

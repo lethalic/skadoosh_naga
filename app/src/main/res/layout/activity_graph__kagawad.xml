@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Graph_Kagawad">
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/hbargraph"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/backgraphviewbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kdate_id"></com.github.mikephil.charting.charts.HorizontalBarChart>
+
+    <Button
+        android:id="@+id/backgraphviewbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif"
+        android:text="@string/backbutton"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hbargraph" />
+
+    <TextView
+        android:id="@+id/graphlabel_tv_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kdate_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kdate_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/hbargraph"
+        app:layout_constraintEnd_toStartOf="@+id/kconnection_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphlabel_tv_id" />
+
+    <TextView
+        android:id="@+id/kconnection_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connection"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/kdate_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kdate_id"
+        app:layout_constraintTop_toTopOf="@+id/kdate_id" />
+
+
+</android.support.constraint.ConstraintLayout>

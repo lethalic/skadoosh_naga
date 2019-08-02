@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">skadoosh_naga</string>
+    <string name="search_textview">SEARCH PROFILE</string>
+    <string name="search_info">Voters Name</string>
+    <string name="profile_view">VOTERS PROFILE</string>
+    <string name="submit">SUBMIT</string>
+    <string name="collect_data">COLLECT DATA</string>
+    <string name="view_graphs">View Graphs</string>
+    <string name="view_profile">View Information</string>
+    <string name="barangay_tv">Pumili ng Barangay</string>
+    <string name="precinct_tv">Pumili ng Presinto</string>
+    <string name="votersname_tv">Pumili ng Botante</string>
+    <string name="backbutton">BACK</string>
+    <string name="graph_view">CITY GRAPH VIEW</string>
+    <string name="generate_graph">GENERATE GRAPH</string>
+    <string name="submit_data">UPLOAD TO SERVER</string>
+    <string name="upload_data">Upload All Data</string>
+    <string name="city_level_graph">CITY LEVEL GRAPH</string>
+    <string name="barangay_level_graph">BARANGAY LEVEL GRAPH</string>
+    <string name="precinct_level_graph">PRECINCT LEVEL GRAPH</string>
+    <string name="missing_entry">GRAPH with MISSING ENTRY</string>
+    <string name="barangay_graph_view">BARANGAY GRAPH VIEW</string>
+    <string name="precinct_graph_view">PRECINCT GRAPH VIEW</string>
+    <string name="generate_graph_with_missing_entry">Generate Graph with Missing Entry</string>
+    <string name="home">HOME</string>
+    <string name="save">Save</string>
+    <string name="voters_information">Voters Information</string>
+    <string name="list_to_upload">Upload List</string>
+    <string name="manage_data">MANAGE DATA</string>
+    <string name="batch_file">Batch File</string>
+    <string name="download">Download</string>
+    <string name="upload_data_menu">UPLOAD DATA</string>
+    <string name="download_batch_file">NEW BATCH FILE</string>
+    <string name="end_canvassing">END CANVASSING</string>
+    <string name="fullname_canvass">FULL NAME</string>
+    <string name="close_canvassing">Close Canvassing</string>
+    <string name="e_mail_canvass">E-MAIL ADDRESS</string>
+    <string name="send_request">send request</string>
+    <string name="generate_line_chart">GENERATE LINE CHART</string>
+    <string name="download_data_menu">DOWNLOAD DATA</string>
+    <string name="download_file">DOWNLOAD FILE</string>
+    <dimen name="pagerTitleTextSize">22sp</dimen>
+    <string-array name="graph_column">
+        <item>Mayor</item>
+    </string-array>
+    <string-array name="questions">
+        <item>KUN NGUNYAN AN ELEKSYON SISAY IBOBOTO MONG MAYOR ?</item>
+        <item>PHONE NUMBER OF VOTER:</item>
+        <item>ENCODER:</item>
+    </string-array>
+    <string-array name="choice_mayor">
+        <item>Siertong Nelson Legacion</item>
+        <item>Nelson Legacion</item>
+        <item>Siertong Tato Mendoza</item>
+        <item>Tato Mendoza</item>
+        <item>Siertong Luis Ortega</item>
+        <item>Luis Ortega</item>
+        <item>Mayo pang napipili</item>
+        <item>Dai maboto</item>
+    </string-array>
+</resources>

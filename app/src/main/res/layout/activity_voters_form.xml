@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".VotersForm">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toTopOf="@+id/prev3btn_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/list_voters"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/side_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#c3c3c3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/list_voters"
+            app:layout_constraintTop_toTopOf="@+id/scrollView3"
+            app:layout_constraintVertical_bias="0.198"
+            tools:layout_editor_absoluteX="8dp">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/voters_tv_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/votersname_tv"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/list_voters"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list_voters"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:choiceMode="singleChoice"
+        android:divider="#3f99b5"
+        android:dividerHeight="2dp"
+        android:listSelector="#FFBB33"
+        app:layout_constraintBottom_toTopOf="@+id/prev3btn_id"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voters_tv_id">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/prev3btn_id"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/backbutton"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_voters" />
+
+    <Button
+        android:id="@+id/homebtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:background="#1da751"
+        android:fontFamily="sans-serif"
+        android:text="@string/home"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/graphbutton"
+        app:layout_constraintTop_toBottomOf="@+id/list_voters"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="sans-serif"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/graphbutton"
+        app:layout_constraintStart_toEndOf="@+id/prev3btn_id"
+        app:layout_constraintTop_toBottomOf="@+id/list_voters"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/graphbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:background="@color/design_default_color_primary"
+        android:text="GRAPH"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homebtn"
+        app:layout_constraintStart_toEndOf="@+id/submitbtn"
+        app:layout_constraintTop_toTopOf="@+id/submitbtn" />
+
+
+</android.support.constraint.ConstraintLayout>

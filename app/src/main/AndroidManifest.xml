@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.edgepoint.skadoosh_naga">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/skadoosh"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/skadoosh"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <receiver android:name=".NetworkMonitor"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- <action android:name="android.net.wifi.WIFI_STATE_CHANGED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <activity android:name=".NetworkMonitor" /> -->
+        <activity android:name=".SearchProfileActivity" />
+        <activity android:name=".BarangayForm" />
+        <activity android:name=".PrecinctForm" />
+        <activity android:name=".VotersForm" />
+        <activity android:name=".QuestionForm" />
+        <activity android:name=".UploadToServer" />
+        <activity android:name=".GraphMenu" />
+        <activity android:name=".GraphActivity3" />
+        <activity android:name=".GraphActivity" />
+        <activity android:name=".GraphActivity2" />
+        <activity android:name=".DownloadBatch" />
+        <activity android:name=".RecyclerSearchView" />
+        <activity android:name=".DataManagement" />
+        <activity android:name=".EndCanvassing" />
+        <activity android:name=".DownloadFromServer" />
+        <activity android:name=".Information_Voter"/>
+        <activity
+            android:name=".GenerateStackedGraphView"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".GenerateStackedGraphViewM"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".GenerateGraphView"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".mGenerateGraphView"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".Graph_Kagawad"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Graph_KagawadM"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".LineGraph"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>
